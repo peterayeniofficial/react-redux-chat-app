@@ -1,0 +1,13 @@
+import { SET_ACTIVE_USER_ID } from '../actions/constants/action-types';
+
+export default function activeUserId(state = null, action) {
+  console.log(action.payload)
+  switch (action.type) {
+    case SET_ACTIVE_USER_ID:
+      return action.payload
+    
+    default:
+        return state
+  }
+  
+}
